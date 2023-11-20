@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Me from "@/public/burhanuddin.jpg";
+// import Resume from "../public/resume.pdf";
 
 export default function Home() {
   return (
@@ -59,7 +60,11 @@ export default function Home() {
             </a>
           </div>
           <div className="pt-6">
-            <button className="flex items-center bg-teal-500/30 p-2 rounded-lg text-teal-500">
+            <a
+              href="/resume.pdf"
+              download="Burhanuddin_resume"
+              className="flex items-center bg-teal-500/30 p-2 rounded-lg text-teal-500"
+            >
               Resume
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +80,7 @@ export default function Home() {
                   d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
         <div className="prose max-w-none prose-lg pt-8 sm:pt-2 pb-7 dark:prose-invert xl:col-span-2">
