@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Me from "@/public/burhanuddin.jpg";
-// import Resume from "../public/resume.pdf";
 
 export default function Home() {
   return (
